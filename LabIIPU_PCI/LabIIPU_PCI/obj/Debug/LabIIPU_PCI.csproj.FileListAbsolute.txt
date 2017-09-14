@@ -1,0 +1,8 @@
+c:\users\bagun\documents\visual studio 2017\Projects\LabIIPU_PCI\LabIIPU_PCI\obj\Debug\LabIIPU_PCI.PCIDevicesList.resources
+c:\users\bagun\documents\visual studio 2017\Projects\LabIIPU_PCI\LabIIPU_PCI\obj\Debug\LabIIPU_PCI.Properties.Resources.resources
+c:\users\bagun\documents\visual studio 2017\Projects\LabIIPU_PCI\LabIIPU_PCI\obj\Debug\LabIIPU_PCI.csproj.GenerateResource.Cache
+c:\users\bagun\documents\visual studio 2017\Projects\LabIIPU_PCI\LabIIPU_PCI\bin\Debug\LabIIPU_PCI.exe
+c:\users\bagun\documents\visual studio 2017\Projects\LabIIPU_PCI\LabIIPU_PCI\bin\Debug\LabIIPU_PCI.pdb
+c:\users\bagun\documents\visual studio 2017\Projects\LabIIPU_PCI\LabIIPU_PCI\obj\Debug\LabIIPU_PCI.exe
+c:\users\bagun\documents\visual studio 2017\Projects\LabIIPU_PCI\LabIIPU_PCI\obj\Debug\LabIIPU_PCI.pdb
+c:\users\bagun\documents\visual studio 2017\Projects\LabIIPU_PCI\LabIIPU_PCI\obj\Debug\LabIIPU_PCI.csprojResolveAssemblyReference.cache
