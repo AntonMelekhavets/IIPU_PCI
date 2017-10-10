@@ -36,7 +36,7 @@ namespace LabIIPU_PCI
         {
             PCIDevices.DownloadFileOfDevIDs();
 
-            List<string> transcriptOfVIDs = PCIDevices.ParseVIDsTranscript();
+            var transcriptOfVIDs = PCIDevices.ParseVIDsTranscript();
             List<string> transcriptOfPIDs = PCIDevices.ParsePIDsTranscript();
             List<string> VIDs = new List<string>();
             List<string> PIDs = new List<string>();
@@ -52,8 +52,9 @@ namespace LabIIPU_PCI
             { 
                 if (VIDs.Count > 0 && transcriptOfVIDs[i].Contains(VIDs[0].ToLower()))
                 {
-                    textBox1.Text = textBox1.Text + "VID: " + transcriptOfVIDs[i] + "PID: ".PadLeft(70) 
-                        + GetProductName(transcriptOfPIDs, PIDs).Trim() + Environment.NewLine;
+                    String productName = GetProductName(transcriptOfPIDs, PIDs);
+                    textBox1.Text = textBox1.Text + "VID: " + transcriptOfVIDs[i]+ Environment.NewLine + "PID: "
+                        + productName + Environment.NewLine + Environment.NewLine;
                     VIDs.RemoveAt(0);
                     i = 0;
                 }

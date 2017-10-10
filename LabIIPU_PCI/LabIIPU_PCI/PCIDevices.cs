@@ -56,7 +56,8 @@ namespace LabIIPU_PCI
         {
             List<string> listOfVIDs = new List<string>();
             String pattern = @"^(\w{4}  (.*?)$)";
-            foreach (Match match in Regex.Matches(GetFileContent(), pattern, RegexOptions.Multiline))
+            String PciIDsFile = GetFileContent();
+            foreach (Match match in Regex.Matches(PciIDsFile, pattern, RegexOptions.Multiline))
                 listOfVIDs.Add(match.Value);
             return listOfVIDs;
         }
@@ -65,7 +66,8 @@ namespace LabIIPU_PCI
         {
             List<string> listOfPIDs = new List<string>();
             String pattern = @"^(\t\w{4})  (.*?)$";
-            foreach (Match match in Regex.Matches(GetFileContent(), pattern, RegexOptions.Multiline))
+            String PciIDsFile = GetFileContent();
+            foreach (Match match in Regex.Matches(PciIDsFile, pattern, RegexOptions.Multiline))
                 listOfPIDs.Add(match.Value.Replace("\t", ""));
             return listOfPIDs;
         }
